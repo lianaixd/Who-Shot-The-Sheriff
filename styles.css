@@ -125,7 +125,7 @@
 
 #end-screen-row {
     display: flex;            /* Turn on flex layout */
-    gap: 1rem;                /* Spacing between items */
+    gap: 0rem;                /* Spacing between items */
     align-items: center;      /* Vertically center in the row */
     justify-content: center;  /* Center them horizontally */
     
