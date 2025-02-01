@@ -128,7 +128,7 @@
     gap: 1rem;                /* Spacing between items */
     align-items: center;      /* Vertically center in the row */
     justify-content: left;  /* Center them horizontally */
-    margin-right: 10px;
+    
   }
   
   /* Optionally remove or reduce default margins on <h2> or <p> */
@@ -136,6 +136,10 @@
   #end-screen-row p {
     margin: 0;
   }
+
+ #end-screen-row button {
+transform: translateX(-10px);
+ }
 
 /* 🔹 Buttons - Retro Look */
 #start-button,
