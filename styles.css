@@ -127,7 +127,7 @@
     display: flex;            /* Turn on flex layout */
     gap: 1rem;                /* Spacing between items */
     align-items: center;      /* Vertically center in the row */
-    justify-content: center;  /* Center them horizontally */
+    justify-content: left;  /* Center them horizontally */
   }
   
   /* Optionally remove or reduce default margins on <h2> or <p> */
