@@ -1,0 +1,166 @@
+/* Import custom font */
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('PressStart2P-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Color variables */
+:root {
+    --container-bg: #f8ba70; /* Main background */
+    --border-dark: #a66a41; /* Outer border */
+    --border-light: #fce5b1; /* Highlight */
+    --shadow-dark: #7a4f32; /* Deep shadow */
+    --shadow-light: #ffdb9b; /* Light shadow */
+}
+
+/* Main game container */
+#game-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('wallpaper.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Game canvas */
+#gameCanvas {
+    border: 3px solid black;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Start Screen */
+#start-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('wallpaper.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+/* 🔹 Controls Panel - Pixel-Style Border */
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+    color: #331f28;
+    
+    /* Background */
+    background: linear-gradient(
+        180deg,
+        var(--container-bg) 0%,
+        #eba867 100%
+    );
+
+    /* 🔲 Pixel Border & Depth */
+    border: 4px solid var(--border-dark);
+    border-radius: 8px;
+    box-shadow:
+        4px 4px 0 var(--shadow-dark),   /* Bottom-right dark */
+        -4px -4px 0 var(--shadow-light), /* Top-left highlight */
+        inset -2px -2px 0 var(--border-dark), /* Inner depth */
+        inset 2px 2px 0 var(--border-light); /* Inner light */
+}
+
+/* 🔹 End Screen - Pixel Border with Depth */
+#end-screen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 500px;
+    padding: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+    color: #331f28;
+
+    /* Background */
+    background: linear-gradient(
+        180deg,
+        var(--container-bg) 0%,
+        #eba867 100%
+    );
+
+    /* 🔲 Pixel Border & Depth */
+    border: 4px solid var(--border-dark);
+    border-radius: 8px;
+    box-shadow:
+        4px 4px 0 var(--shadow-dark),   /* Bottom-right dark */
+        -4px -4px 0 var(--shadow-light), /* Top-left highlight */
+        inset -2px -2px 0 var(--border-dark), /* Inner depth */
+        inset 2px 2px 0 var(--border-light); /* Inner light */
+}
+
+/* 🔹 End message */
+#end-message {
+    font-size: 32px;
+    font-weight: bold;
+    color: #331f28;
+    margin-bottom: 10px; 
+    text-shadow: 2px 2px 0 var(--shadow-light);
+}
+
+#end-screen-row {
+    display: flex;            /* Turn on flex layout */
+    gap: 1rem;                /* Spacing between items */
+    align-items: center;      /* Vertically center in the row */
+    justify-content: center;  /* Center them horizontally */
+  }
+  
+  /* Optionally remove or reduce default margins on <h2> or <p> */
+  #end-screen-row h2,
+  #end-screen-row p {
+    margin: 0;
+  }
+
+/* 🔹 Buttons - Retro Look */
+#start-button,
+#playAgainButton {
+    background: #7C7C7C;
+    border-bottom: 6px inset rgba(0,0,0,.5);
+    border-left: 6px inset rgba(0,0,0,.5);
+    border-right: 6px inset rgba(255,255,255,.5);
+    border-top: 6px inset rgba(255,255,255,.5);
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1rem;
+    min-width: 200px;
+    padding: .5rem;
+    font-family: 'Press Start 2P', sans-serif;
+    will-change: transform;
+}
+
+#start-button:hover,
+#playAgainButton:hover {
+    background: #BCBCBC;
+}
+
+/* 🔹 Input Field Placeholder */
+#player-name {
+    font-family: 'Press Start 2P', sans-serif;
+}

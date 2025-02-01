@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Shot the Sheriff</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <img src="splashScreen.png" alt="Who Shot The Sheriff?" id="splash-image">
+        <br> 
+        <label for="player-name">Enter Your Name:</label>
+        <br>
+        <input type="text" id="player-name" placeholder="Your Name">
+        <br>
+        <button id="start-button">Start Game</button>
+    </div>
+
+    <!-- Game Container -->
+    <div id="game-container">
+        <canvas id="gameCanvas" width="500" height="500"></canvas>
+        <div id="controls">
+            <p id="shoot-instructions">Use Space Bar to Shoot</p>
+            <p id="move-instructions">Use Arrow Keys to Move</p> 
+        </div>
+    </div>
+
+    <!-- End Screen -->
+    <div id="end-screen">
+        <div id="end-screen-row">
+          <h2 id="end-message"></h2>
+          <p id="end-submessage"></p>
+          <button id="playAgainButton">Play Again</button>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
