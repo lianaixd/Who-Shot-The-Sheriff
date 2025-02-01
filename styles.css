@@ -127,7 +127,7 @@
     display: flex;            /* Turn on flex layout */
     gap: 1rem;                /* Spacing between items */
     align-items: center;      /* Vertically center in the row */
-    justify-content: left;  /* Center them horizontally */
+    justify-content: center;  /* Center them horizontally */
     
   }
   
@@ -138,7 +138,7 @@
   }
 
  #end-screen-row button {
-transform: translateX(-20px);
+transform: translateX(-30px);
  }
 
 /* 🔹 Buttons - Retro Look */
